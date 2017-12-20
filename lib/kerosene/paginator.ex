@@ -1,7 +1,7 @@
 defmodule Kerosene.Paginator do
   use Phoenix.HTML
 
-  @default [window: 3, range: true, next_label: "Next", previous_label: "Previous", first: true, first_label: "First", last: true, last_label: "Last"]
+  @default [window: 3, range: true, next_label: "Nächste", previous_label: "Vorherige", first: true, first_label: "Anfang", last: true, last_label: "Ende"]
 
   @moduledoc """
   Helpers to render the pagination links and more.
