@@ -10,7 +10,7 @@ The package is [available in Hex](https://hex.pm/packages/kerosene), the package
 Add kerosene to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
-  [{:kerosene, "~> 0.7.0"}]
+  [{:kerosene, "~> 0.8.0"}]
 end
 ```
 
@@ -23,10 +23,10 @@ end
 ```
 
 ## Usage
-Start paginating your queries 
+Start paginating your queries
 ```elixir
 def index(conn, params) do
-  {products, kerosene} = 
+  {products, kerosene} =
   Product
   |> Product.with_lowest_price
   |> Repo.paginate(params)
@@ -35,7 +35,7 @@ def index(conn, params) do
 end
 ```
 
-Add view helpers to your view 
+Add view helpers to your view
 ```elixir
 defmodule MyApp.ProductView do
   use MyApp.Web, :view
@@ -85,7 +85,7 @@ end
 You can also send in options to paginate helper look at the docs for more details.
 
 ## Contributing
-	
+
 Please do send pull requests and bug reports, positive feedback is always welcome.
 
 
